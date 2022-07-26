@@ -2,10 +2,10 @@
 
 		<div class="nav justify-content-center">
 			<!-- displayes the different navbar buttons -->
-			<a class="border nav-link" :class="selected == 'Home' ? 'bg-primary text-white' : 'bg-light'" href="index.html">Home</a>
-
-			<a class="border nav-link" :class="selected == 'API' ? 'bg-primary text-white' : 'bg-light'" href="about.html">API</a>
-
+			<ul>
+  				<li><a href="index.html">Home</a></li>
+  				<li><a href="about.html">News</a></li>
+			</ul>
 		</div>
 		<!-- displays a welcome message containing name -->
 		<div v-if="loggedInUser" class="text-primary text-center">Welcome, {{ loggedInUser }}!</div>
