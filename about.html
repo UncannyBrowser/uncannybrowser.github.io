@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" crossorigin="anonymous">
+    <!-- Import Vue CDN -->
+    <script src="https://unpkg.com/vue@3.2.2"></script>
+    <!-- Import Single-File-Component Loader CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue3-sfc-loader/dist/vue3-sfc-loader.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/about.png">
+  </head>
+<body>
+  <div id="app">
+    <nav-bar selected="Home"></nav-bar>
+    <about></about>
+  </div>
+  <!-- Load vue scripts below the #app div here -->
+  <script src="./scripts/sfcLoader.js"> </script>
+  <script src="./scripts/main.js"> </script>
+  <script>
+    app.mount('#app');
+  </script>
+</body>
+</html>
+
